@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400&display=swap');
+
+html,
+body {
+  height: 100vh;
+  background-color: #ededed;
+}
+
+header {
+  padding: 10px 20px;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+header a {
+  text-decoration: none;
+  font-size: 40px;
+  color: #ff5a5f;
+  font-weight: bolder;
+  font-family: 'Cherry Swash', cursive;
+}
+
+header input {
+  margin: 0 10px 0 20px;
+  width: 10vw;
+  padding: 8px;
+  position: relative;
+  bottom: 8px;
+  outline: 1px solid #000;
+}
+
+header button {
+  background-color: #00a699;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: relative;
+  bottom: 8px;
+}
+
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./food.jpg);
+  height: 100vh;
+  min-height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.intro {
+  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  font-size: 16px;
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  position: relative;
+  top: 120px;
+}
+
+.intro h2 {
+  font-size: 30px;
+}
+
+.cardList {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.cardList h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+  color: #ff5a5f;
+}
+
+.card {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-width: 0.25rem;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  width: 20rem;
+  height: 35rem;
+  background-color: #c41200;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardImage {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 20px;
+  margin: 10px 10px;
+  height: 50px;
+}
+
+.cardRating {
+  color: #ffff00;
+  font-weight: bold;
+}
+
+.cardLink {
+  display: block;
+  height: 60px;
+  text-decoration: none;
+  color: #3a001e;
+}
+
+.likeBtn {
+  background-color: #ede9d0;
+  font-size: 30px;
+  height: 2em;
+  width: 3em;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  cursor: pointer;
+}
