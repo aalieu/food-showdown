@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ onZipCodeChange, onZipCodeSubmit, handleKeyPress }) => (
   <header>
-    <a href='/food-showdown'>Food Showdown 🍽️</a>
+    <a href='https://aalieu.github.io/food-showdown/'>Food Showdown 🍽️</a>
     <input
       type='text'
       placeholder='Enter Zip Code'
