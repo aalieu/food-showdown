@@ -13,6 +13,6 @@ Food Showdown utilizes the Yelp Fusion API to randomly select 16 businesses loca
 
 Site is still a work in progress and thus some bugs do exist:
 
--After submitting zip code, please wait a few seconds for businesses to load. A spinning loader is in the works.
--If you would like to do another search, please refresh the page or click on the top left to reset the page.
--Works in mobile, but design is not fully responsive
+- After submitting zip code, please wait a few seconds for businesses to load. A spinning loader is in the works.
+- If you would like to do another search, please refresh the page or click on the top left to reset the page.
+- Works in mobile, but design is not fully responsive
