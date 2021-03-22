@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/food-showdown/static/css/main.07e64ccd.chunk.css",
+    "main.js": "/food-showdown/static/js/main.b76ea57e.chunk.js",
+    "main.js.map": "/food-showdown/static/js/main.b76ea57e.chunk.js.map",
+    "runtime-main.js": "/food-showdown/static/js/runtime-main.9e9f7c31.js",
+    "runtime-main.js.map": "/food-showdown/static/js/runtime-main.9e9f7c31.js.map",
+    "static/js/2.a5b65c2b.chunk.js": "/food-showdown/static/js/2.a5b65c2b.chunk.js",
+    "static/js/2.a5b65c2b.chunk.js.map": "/food-showdown/static/js/2.a5b65c2b.chunk.js.map",
+    "static/js/3.4ab95d47.chunk.js": "/food-showdown/static/js/3.4ab95d47.chunk.js",
+    "static/js/3.4ab95d47.chunk.js.map": "/food-showdown/static/js/3.4ab95d47.chunk.js.map",
+    "index.html": "/food-showdown/index.html",
+    "static/css/main.07e64ccd.chunk.css.map": "/food-showdown/static/css/main.07e64ccd.chunk.css.map",
+    "static/js/2.a5b65c2b.chunk.js.LICENSE.txt": "/food-showdown/static/js/2.a5b65c2b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/food-showdown/static/media/food.b7937bc3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e9f7c31.js",
+    "static/js/2.a5b65c2b.chunk.js",
+    "static/css/main.07e64ccd.chunk.css",
+    "static/js/main.b76ea57e.chunk.js"
+  ]
+}
