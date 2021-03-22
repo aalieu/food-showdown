@@ -1,6 +1,12 @@
 import React from 'react';
+import LoadingSpinner from './components/LoadingSpinner';
 
-const Header = ({ onZipCodeChange, onZipCodeSubmit, handleKeyPress }) => (
+const Header = ({
+  onZipCodeChange,
+  onZipCodeSubmit,
+  handleKeyPress,
+  isLoading,
+}) => (
   <header>
     <a href='https://aalieu.github.io/food-showdown/'>Food Showdown 🍽️</a>
     <input
@@ -10,6 +16,7 @@ const Header = ({ onZipCodeChange, onZipCodeSubmit, handleKeyPress }) => (
       onKeyDown={handleKeyPress}
     />
     <button onClick={onZipCodeSubmit}>Submit</button>
+    {isLoading ? <LoadingSpinner /> : null}
   </header>
 );
 

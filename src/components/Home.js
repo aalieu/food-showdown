@@ -27,10 +27,6 @@ const Home = () => {
         </p>
         <p>Site is still a work in progress and thus some bugs do exist:</p>
         <li>
-          After submitting zip code, please wait a few seconds for businesses to
-          load. A spinning loader is in the works.
-        </li>
-        <li>
           If you would like to do another search, please refresh the page or
           click on the top left to reset the page.
         </li>

@@ -8,6 +8,7 @@ let advancingBusinesses = [];
 
 const App = () => {
   const [zipCode, setZipCode] = useState('');
+  const [loading, setLoading] = useState(false);
   const [businesses, setBusinesses] = useState([]);
   const [winningBusinesses, setWinningBusinesses] = useState([]);
   const [round, setRound] = useState('SWEET 16');
@@ -42,17 +43,24 @@ const App = () => {
   // RegEx to check if zip code entered is valid or not
   const isValidZipCode = (zipCode) => /^\d{5}[-\s]?(?:\d{4})?$/gm.test(zipCode);
 
+  // Set loading state to opposite of previous state
+  const previousLoadingState = () => {
+    setLoading((prevLoading) => !prevLoading);
+  };
+
   // On clicking submit with a valid zip code, makes a request to Yelp Fusion API with random parameters
-  // Once call is successful, return JSON response and run a function to randomize the order of businesses returned
+  // Once call is successful, return JSON response and run a function to randomize the order of businesses  returned
   // Set state to store businesses
+  // Return previous loading state
   const onZipCodeSubmit = () => {
+    previousLoadingState();
     const bearer = `Bearer ${process.env.REACT_APP_API_KEY}`;
     const corsAnywhere = `${process.env.REACT_APP_CORS_ANYWHERE}`;
     const randomOffset = Math.floor(Math.random() * 51);
 
     if (isValidZipCode(zipCode)) {
       fetch(
-        `${corsAnywhere}https://api.yelp.com/v3/businesses/search?limit=48&offset=${randomOffset}&location=${zipCode}&open_now=true`,
+        `${corsAnywhere}https://api.yelp.com/v3/businesses/search?limit=48&offset=${randomOffset}&location=${zipCode}&open_now=true&term=food`,
         {
           method: 'get',
           headers: { Authorization: bearer },
@@ -60,7 +68,8 @@ const App = () => {
       )
         .then((response) => response.json())
         .then((data) => shuffleArray(data.businesses, 3))
-        .then((result) => setBusinesses(result));
+        .then((result) => setBusinesses(result))
+        .then(() => previousLoadingState());
     } else {
       alert('Not a valid zip code.');
     }
@@ -188,6 +197,7 @@ const App = () => {
         onZipCodeChange={onZipCodeChange}
         onZipCodeSubmit={onZipCodeSubmit}
         handleKeyPress={handleKeyPress}
+        isLoading={loading}
       />
       {renderShowdown()}
     </div>
