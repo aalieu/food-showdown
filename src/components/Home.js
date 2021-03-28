@@ -31,6 +31,7 @@ const Home = () => {
           click on the top left to reset the page.
         </li>
         <li>Works in mobile, but design is not fully responsive</li>
+        <p>*Only shows businesses currently open at time of search</p>
       </div>
     </div>
   );

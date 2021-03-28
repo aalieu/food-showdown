@@ -56,7 +56,7 @@ const App = () => {
     previousLoadingState();
     const bearer = `Bearer ${process.env.REACT_APP_API_KEY}`;
     const corsAnywhere = `${process.env.REACT_APP_CORS_ANYWHERE}`;
-    const randomOffset = Math.floor(Math.random() * 51);
+    const randomOffset = Math.floor(Math.random() * 26);
 
     if (isValidZipCode(zipCode)) {
       fetch(
