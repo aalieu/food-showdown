@@ -25,12 +25,14 @@ const Card = ({
           {url.split('?')[0]}
         </a>
         <div>
-          <button
-            className='likeBtn'
-            onClick={() => determineWinner(id, businessFaceOff, round)}
-          >
-            ❤️
-          </button>
+          {round !== 'WINNER' ? (
+            <button
+              className='likeBtn'
+              onClick={() => determineWinner(id, businessFaceOff, round)}
+            >
+              ❤️
+            </button>
+          ) : null}
         </div>
       </div>
     </div>

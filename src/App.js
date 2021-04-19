@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useReducer } from 'react';
 import Header from './Header';
 import Showdown from './components/Showdown';
 import Home from './components/Home';
@@ -48,12 +48,17 @@ const App = () => {
     setLoading((prevLoading) => !prevLoading);
   };
 
+  const restartRound = () => {
+    setRound('SWEET 16');
+  };
+
   // On clicking submit with a valid zip code, makes a request to Yelp Fusion API with random parameters
   // Once call is successful, return JSON response and run a function to randomize the order of businesses  returned
   // Set state to store businesses
   // Return previous loading state
   const onZipCodeSubmit = () => {
     previousLoadingState();
+    restartRound();
     const bearer = `Bearer ${process.env.REACT_APP_API_KEY}`;
     const corsAnywhere = `${process.env.REACT_APP_CORS_ANYWHERE}`;
     const randomOffset = Math.floor(Math.random() * 26);

@@ -121,6 +121,9 @@ header .loader {
 }
 
 @media only screen and (max-width: 600px) {
+  .card {
+    margin-top: 10px;
+  }
   .card:hover {
     transform: none;
   }

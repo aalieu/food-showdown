@@ -26,10 +26,6 @@ const Home = () => {
           remains.
         </p>
         <p>Site is still a work in progress and thus some bugs do exist:</p>
-        <li>
-          If you would like to do another search, please refresh the page or
-          click on the top left to reset the page.
-        </li>
         <li>Works in mobile, but design is not fully responsive</li>
         <p>*Only shows businesses currently open at time of search</p>
       </div>
