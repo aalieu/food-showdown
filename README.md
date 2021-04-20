@@ -1,5 +1,5 @@
 
-aalieu.github.io/food-showdown/
+(aalieu.github.io/food-showdown/)
 
 # What is Food Showdown about?
 
