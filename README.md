@@ -1,4 +1,6 @@
 
+aalieu.github.io/food-showdown/
+
 # What is Food Showdown about?
 
 Everyone has had those moments where they think to themselves – "Hmm, what should I eat today?"
