@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useReducer } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Header from './Header';
 import Showdown from './components/Showdown';
 import Home from './components/Home';
@@ -60,12 +60,12 @@ const App = () => {
     previousLoadingState();
     restartRound();
     const bearer = `Bearer ${process.env.REACT_APP_API_KEY}`;
-    const corsAnywhere = `${process.env.REACT_APP_CORS_ANYWHERE}`;
+    // const corsAnywhere = `${process.env.REACT_APP_CORS_ANYWHERE}`;
     const randomOffset = Math.floor(Math.random() * 26);
 
     if (isValidZipCode(zipCode)) {
       fetch(
-        `${corsAnywhere}https://api.yelp.com/v3/businesses/search?limit=48&offset=${randomOffset}&location=${zipCode}&open_now=true&term=food`,
+        `https://api.yelp.com/v3/businesses/search?limit=48&offset=${randomOffset}&location=${zipCode}&open_now=true&term=food`,
         {
           method: 'get',
           headers: { Authorization: bearer },
