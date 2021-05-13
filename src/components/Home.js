@@ -26,6 +26,11 @@ const Home = () => {
           remains.
         </p>
         <p>Site is still a work in progress and thus some bugs do exist:</p>
+        <li>
+          Initial load of businesses has a delay since the CORS proxy is served
+          on Heroku and is unloaded from server memory to save resources.
+          Subsequent runs should load much quicker.
+        </li>
         <li>Works in mobile, but design is not fully responsive</li>
         <p>*Only shows businesses currently open at time of search</p>
       </div>
